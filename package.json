@@ -1,0 +1,39 @@
+{
+    "name": "aldabra",
+    "version": "1.0.0",
+    "author": "vencel <candoudashu@gmail.com>",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/CanDouDaShu/aldabra.git"
+    },
+    "devDependencies": {
+        "@types/chai": "^4.1.7",
+        "@types/lodash": "^4.14.119",
+        "@types/mocha": "^5.2.5",
+        "@types/node": "^10.12.18",
+        "fs-extra": "^8.1.0",
+        "lerna": "^3.14.1",
+        "lerna-relinker": "^1.4.0",
+        "light-generator": "^1.1.0",
+        "midway-bin": "1",
+        "midway-init": "^1.20.1",
+        "typescript": "^3.5.1"
+    },
+    "scripts": {
+        "test": "midway-bin test --timeout=120000",
+        "cov": "midway-bin cov --timeout=120000"
+    },
+    "boilerplateConfig": {
+        "root": "boilerplate",
+        "replaceParameter": "index.js",
+        "replaceFile": [
+            "_package.json",
+            "*.md",
+            "src/config/config.default.ts"
+        ]
+    },
+    "files": [
+        "boilerplate",
+        "index.js"
+    ]
+}
